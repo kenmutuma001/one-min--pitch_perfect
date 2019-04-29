@@ -1,0 +1,67 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link
+    href="https://fonts.googleapis.com/css?family=Anton|Bungee+Inline|Faster+One|Fredericka+the+Great|Libre+Barcode+39|Monoton"
+    rel="stylesheet">
+{% endblock %}
+{% block content %}
+
+<body style="background-color: wheat;">
+    <div class="indexbody">
+        <div
+            style="text-align:center;font-family: 'Faster One', cursive;background-color: #c22020;padding-top: 40px;margin-top: -20px;font-size: 80px;padding-bottom: 40px;">
+            <p>ONE-MINUTE-PITCHES</p>
+
+        </div>
+        <div class="dropdown" style="margin-left: 20px;">
+            <button class="dropbtn" style="font-size: 20px; border-radius: 6px;">PITCHES
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" style="font-size: 18px;">
+                <a href="{{url_for('main.promotion_pitches')}}">Promotion</a>
+                <a href="#">Pick-up Lines</a>
+                <a href="{{url_for('main.product_pitches')}}">Product</a>
+                <a href="{{url_for('main.interview_pitches')}}">Interview</a>
+            </div>
+        </div>
+        <div class="container" style="margin-left: 350px">
+            <div class=" row">
+                <div class="col-md-6"
+                    style=" padding-bottom: 110px; font-family: 'Ramabhadra', sans-serif;font-weight: 600;font-size: 16px;">
+                    <br>
+                    <p>Create new pitches or read other pitches by selecting the category you would prefer</p>
+                    <p>Create an account to comment on other pitches</p>
+                    <div class="container" style="padding-bottom: 20px;">
+                        <a href="{{url_for('main.new_pitch')}}" class="button button3" style="">New
+                            Pitch<New pitch></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Footer -->
+        <footer class="page-footer font-small blue">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3" style="background-color: blue;">© 2018 Copyright:
+                <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+
+    </div>
+
+</body>
+
+{% endblock%}
