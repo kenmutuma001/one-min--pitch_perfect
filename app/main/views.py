@@ -20,6 +20,7 @@ def index():
     interview_piches = Pitch.get_pitches("interview")
     product_piches = Pitch.get_pitches("product")
     promotion_pitches = Pitch.get_pitches("promotion")
+    pickuplines_pitches = Pitch.get_pitches("pickuplines")
 
     return render_template(
         "index.html",
@@ -27,6 +28,7 @@ def index():
         interview=interview_piches,
         product=product_piches,
         promotion=promotion_pitches,
+        pickuplines=pickuplines_pitches,
     )
 
 
@@ -125,6 +127,14 @@ def promotion_pitches():
     pitches = Pitch.get_pitches("promotion")
 
     return render_template("promotion_pitches.html", pitches=pitches)
+
+
+@main.route("/pitches/pickuplines_pitches")
+def pickuplines_pitches():
+
+    pitches = Pitch.get_pitches("pickuplines")
+
+    return render_template("pickuplines_pitches.html", pitches=pitches)
 
 
 @main.route("/pitch/<int:id>", methods=["GET", "POST"])
