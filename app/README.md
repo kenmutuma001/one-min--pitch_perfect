@@ -19,11 +19,13 @@ This website allows user to sign up an account and can create short pitches.One 
 * ./start.sh
 
  ## BDD
- |       Behaviour                     | input                                  |   output              || User can signup	|email adress,username,password	|user will be required to login    |
-|Checks if the passwords match|	password and repeat password	|user will be required to enter matching passwords|
-|User can login	|Email address and correct password	|User account page|
-|User can update profile|Choose the profile picture path|Profile picture|
-|User can post pitch by clicking the pitch|Pitch title and description|Pitch posted depending on the category chosen  |
+ |       Behaviour                     | input                                  |   output              |
+ |------------|-----------|----------------|                    
+ | User can signup	|  email adress,username,password	| user will be required to login    |
+| Checks if the passwords match |	password and repeat password	| user will be required to enter matching passwords|
+| User can login	|  Email address and correct password	| User account page |
+| User can update profile | Choose the profile picture path | Profile picture |
+| User can post pitch by clicking the pitch | Pitch title and description  | Pitch posted depending on the category chosen  |
 ## LINK
 
 ## BUGS
