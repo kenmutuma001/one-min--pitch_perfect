@@ -23,9 +23,7 @@
 .dropdown:hover .dropdown-content {
     display: block;
   }   
-.indexbody{
-    background-image:url("/static/img/Blurred.png")
-}
+
 body {
   background-color: black;
 }
