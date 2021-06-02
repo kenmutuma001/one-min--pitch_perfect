@@ -32,7 +32,7 @@ Jinja2==2.10.1
 keyring==10.6.0
 keyrings.alt==3.0
 Mako==1.0.9
-markdown2==2.3.7
+markdown2==2.4.0
 MarkupSafe==1.1.1
 newsapi==0.1.1
 pep8==1.7.1
